@@ -49,7 +49,8 @@ public class AbilitiesData extends WorldSavedData {
                         if (ability instanceof NBTTagCompound) {
                             NBTTagCompound tagCompound = (NBTTagCompound) ability;
                             String abilityName = tagCompound.getString("ability");
-                            abilityContainerHashMap.put(abilityName, AbilityContainer.deserializeNBT(tagCompound.getCompoundTag("data"), ));
+                            //todo algorithm
+//                            abilityContainerHashMap.put(abilityName, AbilityContainer.deserializeNBT(tagCompound.getCompoundTag("data"), ));
                         }
                     }
                     map.put(player, abilityContainerHashMap);
